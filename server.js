@@ -10,8 +10,6 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-require('./passportLocal.config')
-
 app.use('/', express.static('./public'))
 
 /* public route */
